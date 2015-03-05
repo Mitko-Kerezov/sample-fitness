@@ -1,3 +1,35 @@
-<Page xmlns="http://www.nativescript.org/tns.xsd" >
-  <!-- UI Decalration -->
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded">
+  <StackLayout cssClass="content">
+    <!-- Profile sttings -->
+    <Label cssClass="header" text="Profile"/>
+    <GridLayout cssClass="field-group" columns="auto, 50, *" rows="auto, auto, auto">
+
+      <!-- Name -->
+      <Label cssClass="field" text="Name"/>
+      <Button col="1" colSpan="2" cssClass="field-dialog-button" text="{{ name }}" tap="{{ promptName }}"/>
+
+      <!-- Height -->
+      <Label cssClass="field" text="Height" row="1"/>
+      <TextField row="1" col="1" cssClass="field-value" text="{{ height }}" keyboardType="number"/>
+      <Label col="2" row="1" cssClass="field-unit" text="cm"/>
+
+      <!-- Weight -->
+      <Label row="2" cssClass="field" text="Weight"/>
+      <TextField row="2" col="1" cssClass="field-value" text="{{ weight }}" keyboardType="number"/>
+      <Label row="2" col="2" cssClass="field-unit" text="kg"/>
+    </GridLayout>
+
+    <!-- Notifications settings -->
+    <Label cssClass="header" text="Notifications"/>
+    <GridLayout cssClass="field-group" columns="*, auto" rows="auto, auto, auto">
+      <!-- Notifications -->
+      <Label cssClass="field" text="Vibrate"/>
+      <Switch col="1" cssClass="field-value" checked="{{ vibrateEnabled }}"/>
+
+      <!-- Notifications -->
+      <Label row="1" cssClass="field" text="Sound"/>
+      <Switch row="1" col="1" cssClass="field-value"  checked="{{ soundEnabled }}"/>
+      <Slider row="2" colSpan="2" maxValue="100" value="{{ soundVolume }}" isEnabled="{{ soundEnabled }}"/>
+    </GridLayout>
+  </StackLayout>
 </Page>
