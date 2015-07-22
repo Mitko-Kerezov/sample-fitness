@@ -1,0 +1,26 @@
+{
+	"ProjectName": "Fitness",
+	"ProjectGuid": "d0486316-8fd9-4742-81e5-4ce4a7a32256",
+	"projectVersion": 1,
+	"AppIdentifier": "com.telerik.Fitness",
+	"DisplayName": "Fitness",
+	"Author": "",
+	"Description": "Fitness",
+	"BundleVersion": "1.0",
+	"AndroidVersionCode": "1",
+	"iOSDeviceFamily": [
+		"1",
+		"2"
+	],
+	"iOSBackgroundMode": [],
+	"ProjectTypeGuids": "{F0A65104-D4F4-4012-B799-F612D75820F6}",
+	"AndroidPermissions": [],
+	"DeviceOrientations": [
+		"Portrait",
+		"Landscape"
+	],
+	"AndroidHardwareAcceleration": "false",
+	"iOSStatusBarStyle": "Default",
+	"FrameworkVersion": "1.1.2",
+	"Framework": "NativeScript"
+}
